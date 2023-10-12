@@ -12,13 +12,48 @@
     />
     <title>Shopping List</title>
     
-    <script type="module" crossorigin src="/Bookkeepers-Project/assets/styles-e4927984.js"></script>
-    <link rel="stylesheet" href="/Bookkeepers-Project/assets/styles-fcdc035c.css">
+    <script type="module" crossorigin src="/Bookkeepers-Project/assets/styles-6c0334a2.js"></script>
+    <link rel="stylesheet" href="/Bookkeepers-Project/assets/styles-b5aeb403.css">
   </head>
   <body>
     <!-- Header -->
     <div class="btn-up btn-up_hide"></div>
+<header class="header">
+  <div class="container header-container">
+    <a href="./index.html" class="logo">
+    <svg class="logo-icon" width="24" height="24">
+      <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-site-logo"></use>
+    </svg>
+    <span class="logo-name">Bookshelf</span>
+    </a>
+    <!-- В мобилке навигацыя (дисплей:ноне) -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item ">
+          <a href="./index.html" class="had-nav-link had-home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="./shopping-list.html" class="had-nav-link had-shop">SHOPPING LIST
+            <svg class="shopping-icon" width="24" height="24">
+              <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-shopping"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+    </label>
+    <!-- -- -->
+
+    <!-- Создать "burger-header.html" -->
+    <!-- <div>ENOENT: no such file or directory, open '/home/runner/work/Bookkeepers-Project/Bookkeepers-Project/src./partials/partials/burger-header.html'</div> -->
+    <!-- -- -->
+  </div>
+</head>
 <div class="btn-bottom btn-bottom_hide"></div>
+
 
     <main>
       <!-- Support Ukraine -->
