@@ -12,8 +12,8 @@
     />
     <title>Shopping List</title>
     
-    <script type="module" crossorigin src="/Bookkeepers-Project/assets/styles-e548f9c5.js"></script>
-    <link rel="stylesheet" href="/Bookkeepers-Project/assets/styles-3e332971.css">
+    <script type="module" crossorigin src="/Bookkeepers-Project/assets/modal-f2f7ef79.js"></script>
+    <link rel="stylesheet" href="/Bookkeepers-Project/assets/modal-6799c2d9.css">
   </head>
   <body>
     <!-- Header -->
@@ -259,7 +259,7 @@
     <!-- Modal -->
     <section class="modal">
   <svg class="icon-x-close" width="24" height="24">
-    <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-x-close"></use>
+    <use href="./img/icons.svg#icon-x-close"></use>
   </svg>
   <div class="books">
     <h3 class="books-name"></h3>
@@ -269,20 +269,23 @@
   <div class="information">
     <img
       class="amazon"
-      src="data:image/png;base64,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"
+      src="./img/images/modal/amazon.png"
       alt="amazon"
       width="62"
-      height="32"
+      height="19"
     />
     <img
       class="img-book"
-      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABACAMAAACZQlHRAAABnlBMVEUAAAD+ngT6cBn+hw/9jgv8gRH7ihL+kwn8fBP1fw38iA78hw7/ngP/kQD+mwX6chj6chn+nQT6cRj+ngT6chj+ngT5chn6dBf6cRr+ngT7cBr+ngT+nAX6cBr+nwX6cxf/mgf8cRn+nQX7fBX8lAn8lQj7cRn/ngT/jQn7dRf6dhb9mAf8lwj7eBf+nQb/mwb5cxf6dxf9mwf5exf8exT////6dhf7fBT6chn+nQX+mAf7eRX+mgb9lgj9lAn7eBb6dxb9lwj9kgn6dBj/+PH6cxj+mwb8hBD8ig37fRP9kAv8iA77gBP7ghH8hhD7gRL8jA39jgz9jQz9kQr8hw/+ngX9tnX9sXX9uXT7ewz8hAr9r3b9s3X8fwz8hwn+q0X+pjz7dw/7eQ79igj/9Of/7N7/6NP+0p39v4/+x4X8l0f7iDL9lxL8gQv//Pn/7NX+yaH+unP9q279jQj/9+z/58z+5MP+2Lz9von8rnT+uW/8nlH8mkz9ozD7fhv9lQ3+7+L+2sD+0rH+0Kv+zqn9wpj9t4H+wX/+tmL+tWF1327eAAAANXRSTlMA+/xbXFsHW1sZPiIbBPTz2djU0r+1sx359urowJeWdHNgX1ZWTkZFDvjPzcrIroSDbWtPTWa+3mIAAAKMSURBVFjD7c9nUxpRGIbhTdRVwK5g7zW9kg0hAbPZNIymgQ2VIkWKVEtiTS//OuB7BE7ZyTnM+M37A+Xl4ZpZ6aLzS54aNLf19fRc0qu5r8M8OCXrC6MdNo+tmMcD76VvxU+FFw+cOkab2ECj2cbdTQNTaLMJ1NZIC9P9L4Tqp59l+LFgt0jB0CxKNJOPcveRcMMEcU2cuI4L8tMqkjHC9KSKTBhhxH90nCSTqgO7OJLJExVfGTFiwlFOPYrthrTtdNSnlk6+aHpbC+3GjuAETWDEeBnwR6xnpf3wD3+4dNrxlZFxjKhXz4paK8sWT79TladoaVrPJmJWPJ+q+jT8FGMTtR+hfIggIi7XDnEK5dGYIFzQhmYl8vvJi5ZHY17iz1+K2GAT7yGa2N+nCTSuxYkP0DpFZLMUsY7GBPEOoomlJZpAY4J4BfERaMwmVniIFTSuwYiaKohZgpiFGMQCTcBWh9iiiAVuwj3vLsZFbLkhgpiH1rgINCaIlxAXsYbGOFGnT6xyE3On12WKWOUm5iAuYhmNCeItxCAWaQKN63DiDUQTiwwCjdlEkIcIsonXEBDh75ufNjORSiKSKZx+fAECjXGiAV0DBeLbwfHpZyX+tfAHb5HYO1TgdLBXIAJo3IATChTQwnG7UupzqkikfinlDsNaQIEoAoofKxAyrF6vNRfEbnGFSYwp7Ow/vd6MXWE3hhH37TolcrmEXad7GGHUmwUSCaddJyNGmJxUM87/ZcIIeUYkJ7zJEtaNB8JdlfCGxIk7BGFoERWuGCSi288EG5LImjqfC9U5LVF1tT4UqLVLYmSw8AsWEKiaRtr5gPYRSTd5cqCzvbel+7JO3S29rZaBSVm66Nz6BwnRjMqJHEjPAAAAAElFTkSuQmCC"
+      src="./img/images/modal/book.png"
       alt="book"
       width="32"
       height="32"
     />
   </div>
-  <div class="hallo"><button class="btn-books">hallo</button></div>
+  <div class="hallo">
+    <button class="btn-books">hallo</button>
+    <p></p>
+  </div>
 </section>
 
 
