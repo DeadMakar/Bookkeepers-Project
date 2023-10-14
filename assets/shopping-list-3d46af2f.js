@@ -1,0 +1,1 @@
+import{S as a}from"./modal-local-storage-bdbcdea9.js";n();function n(){const r=JSON.parse(localStorage.getItem("storedBooks"));console.log(r);try{r.length===0&&onErrorStubMarkup(r),shopCardMarkup(r),c(r)}catch{}}function c(r){let o=r;const e=r.currentTarget,t=r.indexOf(e);r.splice(t,1),localStorage.setItem(a,JSON.stringify(o))}
