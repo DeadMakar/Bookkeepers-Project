@@ -29,9 +29,9 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Bookkeepers-Project/assets/index-cc5ae804.js"></script>
-    <link rel="modulepreload" crossorigin href="/Bookkeepers-Project/assets/modal-local-storage-bdbcdea9.js">
-    <link rel="stylesheet" href="/Bookkeepers-Project/assets/modal-local-storage-d498e251.css">
+    <script type="module" crossorigin src="/Bookkeepers-Project/assets/index-b930160a.js"></script>
+    <link rel="modulepreload" crossorigin href="/Bookkeepers-Project/assets/modal-local-storage-0eceb788.js">
+    <link rel="stylesheet" href="/Bookkeepers-Project/assets/modal-local-storage-9f979d57.css">
   </head>
 
   <body>
@@ -62,10 +62,17 @@
       </nav>
     </div>
     <div class="box-burger">
-      <label id="switch" class="switch">
-        <input type="checkbox" onchange="toggleTheme()" id="slider">
-        <span class="slider round"></span>
+      
+     <label class="toggle-theme common-toggle">
+        <input type="checkbox" js-toggle class="toggle__input" aria-label="toggle dark mode"/>
+        <span class="check"></span>
       </label>
+      
+<!-- 
+      <label class="header__selection toggle">
+        <input js-toggle class="toggle__input" aria-label="toggle dark mode" type="checkbox">
+        <span class="toggle__fake"></span>
+      </label> -->
 
       <svg class="burger-icon" width="28" height="28">
         <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-burger"></use>
