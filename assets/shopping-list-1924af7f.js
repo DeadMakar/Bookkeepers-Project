@@ -1,4 +1,4 @@
-import{K as a,N as r}from"./modal-local-storage-4133d758.js";const s={ShopUlEl:document.querySelector(".shopping-list-container"),ShopStubEl:document.querySelector(".shopping-list-container"),shopRemoveBtnEl:document.querySelector(".shopping-delete-btn"),targetEl:document.querySelector(".js-guard")};function n(i){const t=i.map(e=>`<li class="shopping-item">
+import{K as a,N as r}from"./modal-local-storage-204f5fc4.js";const s={ShopUlEl:document.querySelector(".shopping-list-container"),ShopStubEl:document.querySelector(".shopping-list-container"),shopRemoveBtnEl:document.querySelector(".shopping-delete-btn"),targetEl:document.querySelector(".js-guard")};function n(i){const t=i.map(e=>`<li class="shopping-item">
       <div class="shopping-list-item">
         <div class="shopping-book-overlay">
           <img
