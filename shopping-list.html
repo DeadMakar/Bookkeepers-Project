@@ -12,14 +12,14 @@
     />
     <title>Shopping List</title>
     
-    <script type="module" crossorigin src="/Bookkeepers-Project/assets/shopping-list-08beb1a3.js"></script>
-    <link rel="modulepreload" crossorigin href="/Bookkeepers-Project/assets/modal-local-storage-6536e5e6.js">
-    <link rel="stylesheet" href="/Bookkeepers-Project/assets/modal-local-storage-e7e94404.css">
+    <script type="module" crossorigin src="/Bookkeepers-Project/assets/shopping-list-1dfeeb7f.js"></script>
+    <link rel="modulepreload" crossorigin href="/Bookkeepers-Project/assets/modal-local-storage-4a8e15a4.js">
+    <link rel="stylesheet" href="/Bookkeepers-Project/assets/modal-local-storage-fed1257a.css">
   </head>
   <body>
     <!-- Header -->
     <div class="btn-up btn-up_hide"></div>
-<header class="header">
+<section class="header">
   <div class="container header-container">
     <div class="box-logo">
       <a href="./index.html" class="logo">
@@ -30,11 +30,14 @@
       </a>
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item ">
-            <a href="./index.html" class="had-nav-link had-home"><strong>HOME</strong></a>
+          <li class="nav-item">
+            <a href="./index.html" class="had-nav-link had-home"
+              ><strong>HOME</strong></a
+            >
           </li>
           <li class="nav-item">
-            <a href="./shopping-list.html" class="had-nav-link had-shop current"><strong>SHOPPING LIST</strong>
+            <a href="./shopping-list.html" class="had-nav-link had-shop current"
+              ><strong>SHOPPING LIST</strong>
               <svg class="shopping-icon" width="20" height="20">
                 <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-shopping"></use>
               </svg>
@@ -45,17 +48,55 @@
     </div>
     <div class="box-burger">
       <label id="switch" class="switch">
-        <input type="checkbox" onchange="toggleTheme()" id="slider">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
         <span class="slider round"></span>
       </label>
 
-      <svg class="burger-icon" width="28" height="28">
-        <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-burger"></use>
-      </svg>
+      <label class="toggle-theme common-toggle">
+        <input
+          type="checkbox"
+          js-toggle
+          class="toggle__input"
+          aria-label="toggle dark mode"
+        />
+        <span class="check"></span>
+      </label>
+
+      <!-- 
+      <label class="header__selection toggle">
+        <input js-toggle class="toggle__input" aria-label="toggle dark mode" type="checkbox">
+        <span class="toggle__fake"></span>
+      </label> -->
+
+      <button id="openBurger" class="header-burger active">
+        <svg class="burger-icon" width="28" height="28">
+          <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-burger"></use>
+        </svg></button
+      ><button id="closeBurger" class="header-close">
+        <svg class="burger-icon" width="28" height="28">
+          <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-x-close"></use>
+        </svg>
+      </button>
     </div>
   </div>
-</head>
-<div class="btn-bottom btn-bottom_hide"></div>
+</section>
+<div id="overlay" class="header-burger-menu overlay">
+  <div class="overlay-content">
+    <ul class="header-list">
+      <li>
+        <a href="./index.html" class="header-link"><strong>HOME</strong></a>
+      </li>
+      <li>
+        <a href="./shopping-list.html" class="header-link current"
+          ><strong>SHOPPING LIST</strong>
+          <svg class="shopping-icon" width="20" height="20">
+            <use href="/Bookkeepers-Project/assets/symbol-defs-c8f30ebc.svg#icon-shopping"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 
     <main>

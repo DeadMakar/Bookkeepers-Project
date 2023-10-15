@@ -29,9 +29,9 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Bookkeepers-Project/assets/index-1e45d8cb.js"></script>
-    <link rel="modulepreload" crossorigin href="/Bookkeepers-Project/assets/modal-local-storage-6536e5e6.js">
-    <link rel="stylesheet" href="/Bookkeepers-Project/assets/modal-local-storage-e7e94404.css">
+    <script type="module" crossorigin src="/Bookkeepers-Project/assets/index-a90e2707.js"></script>
+    <link rel="modulepreload" crossorigin href="/Bookkeepers-Project/assets/modal-local-storage-4a8e15a4.js">
+    <link rel="stylesheet" href="/Bookkeepers-Project/assets/modal-local-storage-fed1257a.css">
   </head>
 
   <body>
@@ -65,19 +65,22 @@
       </nav>
     </div>
     <div class="box-burger">
-
       <label id="switch" class="switch">
         <input type="checkbox" onchange="toggleTheme()" id="slider" />
         <span class="slider round"></span>
-
-      
-     <label class="toggle-theme common-toggle">
-        <input type="checkbox" js-toggle class="toggle__input" aria-label="toggle dark mode"/>
-        <span class="check"></span>
-
       </label>
-      
-<!-- 
+
+      <label class="toggle-theme common-toggle">
+        <input
+          type="checkbox"
+          js-toggle
+          class="toggle__input"
+          aria-label="toggle dark mode"
+        />
+        <span class="check"></span>
+      </label>
+
+      <!-- 
       <label class="header__selection toggle">
         <input js-toggle class="toggle__input" aria-label="toggle dark mode" type="checkbox">
         <span class="toggle__fake"></span>
@@ -99,7 +102,9 @@
   <div class="overlay-content">
     <ul class="header-list">
       <li>
-        <a href="./index.html" class="header-link"><strong>HOME</strong></a>
+        <a href="./index.html" class="header-link current"
+          ><strong>HOME</strong></a
+        >
       </li>
       <li>
         <a href="./shopping-list.html" class="header-link"
