@@ -1,4 +1,4 @@
-import{K as t,N as p}from"./modal-local-storage-66051af8.js";const a={ShopUlEl:document.querySelector(".shopping-list-container"),ShopStubEl:document.querySelector(".shopping-list-container"),shopRemoveBtnEl:document.querySelector(".shopping-delete-btn"),targetEl:document.querySelector(".js-guard")};function r(i){const s=i.map(e=>`<li class="shopping-item">
+import{K as a,N as r}from"./modal-local-storage-66051af8.js";const s={ShopUlEl:document.querySelector(".shopping-list-container"),ShopStubEl:document.querySelector(".shopping-list-container"),shopRemoveBtnEl:document.querySelector(".shopping-delete-btn"),targetEl:document.querySelector(".js-guard")};function n(i){const t=i.map(e=>`<li class="shopping-item">
       <div class="shopping-list-item">
         <div class="shopping-book-overlay">
           <img
@@ -96,7 +96,7 @@ import{K as t,N as p}from"./modal-local-storage-66051af8.js";const a={ShopUlEl:d
     </svg>
   </button>
 </li>
-`).join("");a.ShopUlEl.insertAdjacentHTML("beforeend",s)}function m(){const i=`<li class="shopping-error-wrap">
+`).join("");s.ShopUlEl.insertAdjacentHTML("beforeend",t)}function p(){const i=`<li class="shopping-error-wrap">
       <p class="shopping-error-text">
         This page is empty, add some books and proceed to order.
       </p>
@@ -131,4 +131,4 @@ import{K as t,N as p}from"./modal-local-storage-66051af8.js";const a={ShopUlEl:d
         height="198"
       />
         </picture>
-    </li>`;a.ShopStubEl.innerHTML=i}let o=JSON.parse(localStorage.getItem(t))||[];c();function c(){try{if(o.length===0){m(o);return}r(o)}catch(i){console.error("Error:",i),p.Notify.failure("Sorry, there are no images matching your search query. Please try again.")}}a.shopRemoveBtnEl.addEventListener("click",n);n(o);function n(i){console.log(i);let s=i;const e=i.target.Dataset[id],g=o.find(e).indexOf();o.splice(g,1),localStorage.setItem(t,JSON.stringify(o)),r(o),localStorage.setItem(t,JSON.stringify(s))}
+    </li>`;s.ShopStubEl.innerHTML=i}let o=JSON.parse(localStorage.getItem(a))||[];g();function g(){try{if(o.length===0){p(o);return}n(o)}catch(i){console.error("Error:",i),r.Notify.failure("Sorry, there are no images matching your search query. Please try again.")}}
