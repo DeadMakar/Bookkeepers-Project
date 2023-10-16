@@ -112,22 +112,6 @@
   }
 }
 
-.list-item {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  transition: transform 1s ease;
-  filter: brightness(0) invert(1);
-}
-
-.list-item.smooth-slide-up {
-  animation: slideInFromBottom 1s ease;
-}
-
-.list-item.smooth-slide-down {
-  animation: slideInFromTop 1s ease;
-}
-
 .smooth-slide-up {
   animation: slideInFromBottom 1s ease;
 }

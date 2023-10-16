@@ -156,7 +156,6 @@ function updateList() {
   }
   fondsList.appendChild(fragment);
 }
-
 function resetFonds() {
   currentState = [...initialFonds];
   currentPage = 0;
@@ -173,10 +172,10 @@ suppBtn.addEventListener('click', () => {
 
   if (clickCount === 1) {
     firstClick = true;
-    suppBtn.style.transition = 'transform 0.3s ease';
+    suppBtn.style.transition = 'transform 0.5s ease';
     suppBtn.style.transform = 'rotate(270deg)';
   } else if (clickCount === 2) {
-    suppBtn.style.transition = 'transform 0.3s ease';
+    suppBtn.style.transition = 'transform 0.5s ease';
     suppBtn.style.transform = 'rotate(90deg)';
     clickCount = 0;
     firstClick = false;
