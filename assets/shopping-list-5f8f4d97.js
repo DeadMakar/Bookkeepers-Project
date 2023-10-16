@@ -1,4 +1,4 @@
-import{K as a,N as r}from"./modal-local-storage-204f5fc4.js";const s={ShopUlEl:document.querySelector(".shopping-list-container"),ShopStubEl:document.querySelector(".shopping-list-container"),shopRemoveBtnEl:document.querySelector(".shopping-delete-btn"),targetEl:document.querySelector(".js-guard")};function n(i){const t=i.map(e=>`<li class="shopping-item">
+import{K as r,N as n}from"./modal-local-storage-a97fbc17.js";const t={ShopUlEl:document.querySelector(".shopping-list-container"),ShopStubEl:document.querySelector(".shopping-list-container"),shopRemoveBtnEl:document.querySelector(".shopping-delete-btn"),targetEl:document.querySelector(".js-guard")};function p(i){const o=i.map(e=>`<li class="shopping-item">
       <div class="shopping-list-item">
         <div class="shopping-book-overlay">
           <img
@@ -90,13 +90,13 @@ import{K as a,N as r}from"./modal-local-storage-204f5fc4.js";const s={ShopUlEl:d
       </div>
     </div>
   </div>
-  <button class="shopping-delete-btn" type="button">
+  <button class="shopping-delete-btn" type="button" data-card-id ="${e._id}">
     <svg class="shopping-delete-btn-icon" width="16" height="16">
-      <use href="./img/icons/symbol-defs.svg#icon-delete"></use>
+      <use class="shopping-icon" href="./img/icons/symbol-defs.svg#icon-delete" ></use>
     </svg>
   </button>
 </li>
-`).join("");s.ShopUlEl.insertAdjacentHTML("beforeend",t)}function p(){const i=`<li class="shopping-error-wrap">
+`).join("");t.ShopUlEl.insertAdjacentHTML("beforeend",o)}function a(){const i=`<li class="shopping-error-wrap">
       <p class="shopping-error-text">
         This page is empty, add some books and proceed to order.
       </p>
@@ -131,4 +131,4 @@ import{K as a,N as r}from"./modal-local-storage-204f5fc4.js";const s={ShopUlEl:d
         height="198"
       />
         </picture>
-    </li>`;s.ShopStubEl.innerHTML=i}let o=JSON.parse(localStorage.getItem(a))||[];g();function g(){try{if(o.length===0){p(o);return}n(o)}catch(i){console.error("Error:",i),r.Notify.failure("Sorry, there are no images matching your search query. Please try again.")}}
+    </li>`;t.ShopStubEl.innerHTML=i}let s=JSON.parse(localStorage.getItem(r))||[];g();function g(){try{if(s.length===0){a(s);return}p(s)}catch(i){console.error("Error:",i),n.Notify.failure("Sorry, there are no images matching your search query. Please try again.")}}t.ShopUlEl.addEventListener("click",m);function m(i){let o=i.target.dataset.cardId,e=i.target.closest(".shopping-item");i.target.className==="shopping-delete-btn"&&(console.log(o),e.remove(),a())}
